@@ -1,0 +1,730 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+body,h1,h2,h3,h4,h5,h6,p,a,small, i, code{
+    font-family: 'Work Sans', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+.section-bg{
+    background-color: #f7f9ff;
+}
+
+/* header section css */
+.navbar{
+    position: fixed;
+    width: 100%;
+    display: block;
+    background: #fff;
+    z-index: 9999;
+}
+.navbar-brand img {
+    max-width: 45px;
+    margin-right: 10px;
+}
+.navbar-brand {
+    font-size: 20px;
+    font-weight: 600;
+}
+/* header menu section */
+.header-menu{
+    margin-left: 80px;
+}
+.header-menu ul li a {
+    text-decoration: none;
+    color: #111;
+    padding: 0 16px !important;
+}
+.header-menu ul li a:hover{
+    color: #6278df;
+    transition: .3s;
+}
+.header-menu-drp a:hover{
+    color: #6278df !important;
+}
+.dropdown-toggle::after {
+    margin-left: -1px;
+    margin-top: -4px !important;
+    position: relative;
+    top: 2px;
+    left: 0;
+}
+.header-menu .btn{
+    color: #6278df;
+    border: 2px solid #6278df;
+    transition: .4s;
+}
+.header-menu .btn:hover{
+    color: #fff;
+    background-color: #6278df;
+    box-shadow:2px 2px 15px 0 rgba(98, 120, 223);
+}
+
+/* this is slider section */
+.slider{
+    background:linear-gradient(rgba(1,1,1,.5),rgba(1,1,1,.5)), url(https://mobirise.com/extensions/appamp/assets/images/mbr-10.jpg) no-repeat center;
+    background-size: cover;
+    padding: 180px 0;
+}
+.slider-text {
+    width: 75%;
+  }
+.slider-text h4 {
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 23px;
+}
+.slider-text h3 {
+    font-size: 45px;
+    margin-bottom: 36px;
+}
+.slider-text .form-control {
+    padding: 12px;
+    margin-bottom: 20px;
+}
+.slider-text .slide-btn{
+    padding: 7px 0;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    background-color: #5ba533;
+    transition: .4s;
+}
+.slider-text .slide-btn:hover{
+    border: 2px solid;
+    color: #5ba533;
+    background-color: #fff;
+}
+
+/* counter up section */
+.counter-box {
+    position: relative;
+    margin-bottom: 45px;
+}
+.counters {
+    font-size: 50px;
+    font-weight: 600;
+}
+.counter-sign {
+    position: absolute;
+    top: 0%;
+    left: 78%;
+    font-size: 50px;
+}
+.counter-text {
+    color: #767676;
+    font-size: 18px;
+    margin-top: 12px;
+}
+
+/* about section css */
+.about-section{
+    background-color: #f7f9ff;
+}
+.about-text-left{
+    margin-top: 45px;
+}
+.about-text-left h2 {
+    font-size: 2.8rem;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.about-text-left p{
+    box-sizing: border-box;
+    padding-right: 78px;
+    font-size: 1.15rem;
+}
+
+/* feature section css */
+.feature-head {
+    margin-top: 50px;
+}
+.feature-head h1 {
+    font-size: 44px;
+}
+.feature-head h3 {
+    color: #767676;
+    font-size: 24px;
+    margin-top: 32px;
+    margin-bottom: 20px;
+}
+
+.feature-item{
+    height: 290px;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,.25);
+}
+.feature-item-img{
+    width: 40%;
+    overflow: hidden;
+    border-radius: 5px 0 0 5px;
+}
+.feature-item-img img{
+    height: 100%;
+    width: auto !important;
+    max-width: inherit;
+    position: relative;
+    top: 0;
+    left: -120px;
+}
+.feature-item-img .feature-img{
+    position: relative;
+    top: 0;
+    left: -30px;
+}
+.feature-item-text{
+    width: 60%;
+    padding: 20px;
+}
+.feature-item-text h4{
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+.feature-item-text p{
+    font-size: 13px;
+    color: #767676;
+    margin-right: 25px;
+}
+
+/* portfolio section css */
+.portfolio-section{ 
+    margin-top: 50px;
+}
+.portfolio-section h1 {
+    font-size: 50px;
+    padding: 50px;
+}
+.portfolio-item{
+    position: relative;
+}
+.portfolio-item a::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(98, 120, 223, .65);
+    opacity: 0;
+    visibility: hidden;
+    transition: .35s;
+}
+.portfolio-item:hover a::after{
+    opacity: 1;
+    visibility: visible;
+}
+/* pricing section */
+.pricing-head h1{
+    font-size: 45px;
+}
+.pricing-head h2 {
+    font-size: 18px;
+    margin-top: 33px;
+    color: #767676;
+}
+
+.pricing-item {
+    box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 25%);
+    box-sizing: border-box;
+    padding: 55px 42px;
+    border-radius: 5px;
+    transition: .4s;
+}
+.pricing-item h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.pricing-item h3 {
+    color: #767676;
+    font-size: 21px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+.pricing-item ul{
+    padding-left: 0;
+}
+.pricing-item ul li {
+    color: #767676;
+    list-style: none;
+    padding: 8px 0;
+    font-size: 18px;
+    font-weight: 400;
+}
+.pricing-item ul li span {
+    color: #6278df;
+    font-size: 26px;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    left: 0px;
+    width: 30px;
+    margin-right: 5px;
+}
+.pricing-item .pricing-btn a {
+    box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 25%);
+    border: none;
+    font-size: 21px;
+    font-weight: 600;
+    padding: 9px 17px;
+    transition: .5s;
+}
+.pricing-item:hover a{
+    background-color: #6278df;
+    color: #fff;
+}
+.pricing-item .pricing-btn a:hover{
+    color: #fff;
+    background-color: #111;
+}
+
+
+/* this is testimonial section */
+.testimonial-text h2 {
+    color: #767676;
+    font-size: 27px;
+    font-weight: 300;
+}
+.testimonial-text h1 {
+    font-size: 33px;
+}
+.testimonial-text span {
+    font-size: 71px;
+    color: rgba(1,1,1,.1);
+}
+.testimonial-text p {
+    font-size: 21px;
+    max-width: 58%;
+    color: #767676;
+}
+.testimonial-text .author-info {
+    width: 250px;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+}
+.testimonial-text .author-info img {
+    max-width: 68px;
+    margin-right: 12px;
+}
+.testimonial-text .author-details {
+    text-align: left;
+    position: relative;
+    top: 9px;
+    left: 0;
+}
+.testimonial-text .author-details h3 {
+    font-size: 19px;
+    margin-bottom: 2px;
+}
+.testimonial-text .author-details p {
+    font-size: 14px;
+}
+
+/* team-section */
+.team-section .team-item{
+    margin-top: 130px;
+}
+.team-section .card-body {
+    box-sizing: border-box;
+    padding: 15px 27px;
+}
+.team-section .card-body img {
+    width: 84px;
+    margin-top: -60px;
+    margin-bottom: 12px;
+    box-shadow: 4px 3px 10px rgba(98, 120, 223, .3);
+    margin-left: -13px;
+}
+.team-section .card-title {
+    font-size: 22px;
+    margin-bottom: 11px;
+}
+.team-section .card-subtitle {
+    font-size: 16px;
+    margin-bottom: 17px;
+}
+.team-section .card-text {
+    color: #767676;
+    font-size: 14px;
+}
+.team-section .team-item a {
+    margin-bottom: 26px;
+    transition: .5s;
+}
+.team-section .team-item a:hover{
+    color: #fff;
+    background-color: #465052;
+}
+/* contact form */
+.contact-form .card{
+    box-shadow: 3px 5px 30px rgba(64,87,191,.33);
+}
+.contact-form button{
+    color: #fff;
+    background-color: #6278df;
+    font-weight: bold;
+    border: 2px solid transparent;
+    transition: .5s;
+}
+.contact-form button:hover{
+    border: 2px solid #6278df;
+    color: #6278df;
+    background-color: #fff;
+}
+
+/* newslater section */
+.newslater .btn-outline-success {
+    color: #5ba533;
+    border: 2px solid #5ba533;
+    padding: 11px 31px;
+    transition: .5s;
+}
+.footer-bottom{
+    width: 50%;
+}
+.footer-bottom-text{
+    width: 50%;
+}
+.newslater .btn-outline-success:hover{
+    color: #fff;
+    background-color: #5ba533;
+    box-shadow: 4px 5px 30px rgba(91, 165, 51, .75);
+}
+.newslater .btn-success{
+    color: #fff;
+    background-color: #5ba533;
+    padding: 11px 26px;
+    box-shadow: 4px 5px 30px rgba(91, 165, 51, .75);
+    transition: .5s;
+}
+.newslater .btn-success:hover{
+    background-color: #111;
+    color: #fff;
+    box-shadow: none;
+}
+.profile-link{
+    text-decoration: none;
+    color: #6278df;
+}
+
+
+
+/* responsive css */
+@media (max-width:991px){
+    .nav-item {
+        line-height: 34px;
+      }
+      .header-menu {
+        margin-left: 0;
+      }
+      .dropdown-menu{
+          border: none;
+      }
+      hr:not([size]) {
+        height: 0;
+      }
+       .navbar-nav .dropdown-menu {
+        position: relative;
+        top: -51px;
+        left: 118px;
+        background: #fafafa;
+      }
+      .dropdown-item {
+        line-height: 18px;
+        font-size: 16px;
+      }
+      .navbar{
+        position: inherit;
+    }
+    .counters {
+        font-size: 41px;
+      }
+      .counter-sign {
+        left: 86%;
+        font-size: 41px;
+      }
+      .about-text-left {
+        margin-top: 0;
+      }
+      .feature-head h3 {
+        font-size: 15px;
+        margin-top: 15px;
+      }
+      .feature-head h1 {
+        font-size: 30px;
+      }
+      .pricing-head h1 {
+          font-size: 35px;
+      }
+      .pricing-head h2 {
+        font-size: 15px;
+        margin-top: 18px;
+      }
+      .pricing-item h2 {
+        font-size: 27px;
+      }
+      .pricing-item h3 {
+        font-size: 18px;
+      }
+      .pricing-item ul li span {
+        font-size: 22px;
+      }
+      .pricing-item ul li {
+        font-size: 16px;
+      }
+      .pricing-item .pricing-btn a {
+        font-size: 16px;
+        padding: 8px 16px;
+      }
+      .team-section h1 {
+        font-size: 28px;
+      }
+      .team-section p {
+        font-size: 15px;
+      }
+      .testimonial-text h1 {
+        font-size: 19px;
+      }
+      .testimonial-text h2 {
+        font-size: 16px;
+      }
+      .footer-bottom {
+        width: 50%;
+      }
+      .newslater .btn-outline-success {
+        padding: 6px 22px;
+        font-size: 16px;
+      }
+      .newslater .btn-success {
+        padding: 7px 14px;
+        font-size: 16px;
+      }
+}
+@media (max-width:767px){
+    .slider-text h3 {
+        font-size: 33px;
+        margin-bottom: 26px;
+      }
+      .slider-text h4 {
+        font-size: 16px;
+        margin-bottom: 12px;
+      }
+      .about-text-left {
+        margin-bottom: 36px;
+      }
+      .portfolio-section h1 {
+        font-size: 28px;
+        padding: 35px;
+      }
+      .testimonial-text h1 {
+        font-size: 24px;
+      }
+      .testimonial-text h2 {
+        font-size: 20px;
+      }
+      .testimonial-text span {
+        font-size: 60px;
+      }
+      .testimonial-text p {
+        font-size: 15px;
+      }
+      .testimonial-text .author-info img {
+        max-width: 57px;
+      }
+      .testimonial-text .author-details {
+        top: 9px;
+      }
+      .testimonial-text .author-details h3 {
+        font-size: 16px;
+        margin-bottom: 0px;
+      }
+      .testimonial-text .author-details p {
+        font-size: 13px;
+      }
+      .team-section h1 {
+        font-size: 21px;
+      }
+      .team-section p {
+        font-size: 12px;
+      }
+      .footer-bottom {
+        width: 70%;
+      }
+      .testimonial-text h2 {
+        font-size: 15px;
+      }
+      .testimonial-text h1 {
+        font-size: 17px;
+      }
+      footer h4 {
+        font-size: 15px;
+      }
+     
+}
+@media (max-width:575px){
+    .dropdown-item{
+        font-size: 14px;
+    }
+    .slider-text .slide-btn {
+        width: 50%;
+        margin: auto;
+      }
+      .slider-text h4 {
+        font-size: 11px;
+      }
+      .slider-text h3 {
+        font-size: 25px;
+      }
+      .slider{
+          padding: 100px 0;
+      }
+      .counter-sign {
+        left: 65%;
+      }
+      .about-text-left h2 {
+        font-size: 2rem;
+      }
+      .about-text-left p {
+        font-size: .9rem;
+        padding-right: 0;
+      }
+      .pricing-head h2 {
+        font-size: 13px;
+      }
+      .pricing-head h1 {
+        font-size: 25px;
+      }
+      .newslater .btn-outline-success {
+        margin-bottom: 19px;
+      }
+      .newslater .btn-success {
+        margin-bottom: 19px;
+      }
+      .footer-bottom-text {
+        width: 100%;
+      }
+}
+@media (max-width:400px){
+    .navbar-brand {
+        font-size: 13px;
+      }
+      .navbar-brand img {
+        max-width: 30px;
+        margin-right: 7px;
+      }
+      .header-menu .btn.btn-outline-info {
+        font-size: 12px;
+        padding: 4px 16px !important;
+      }
+      .counter-sign {
+        left: 74%;
+      }
+      .about-text-left h2 {
+        font-size: 18px;
+      }
+      .about-text-left p {
+        font-size: 13px;
+        padding-right: 0;
+      }
+      .feature-item-text h4 {
+        font-size: 17px;
+      }
+      .feature-item-text p {
+        font-size: 12px;
+        margin-right: 0;
+      }
+      .portfolio-section h1 {
+        font-size: 19px;
+      }
+      .pricing-head h2 {
+        font-size: 10px;
+        margin-top: 15px;
+      }
+      .pricing-head h1 {
+        font-size: 20px;
+      }
+      .pricing-item h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      .pricing-item {
+        padding: 35px 21px;
+      }
+      .pricing-item h3 {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+      .pricing-item ul li {
+        font-size: 14px;
+      }
+      .pricing-item ul li span {
+        font-size: 19px;
+        width: 22px;
+      }
+      .testimonial-text h2 {
+        font-size: 16px;
+      }
+      .testimonial-text h1 {
+        font-size: 18px;
+      }
+      .testimonial-text span {
+        font-size: 47px;
+      }
+      .testimonial-text p {
+        font-size: 13px;
+      }
+      .testimonial-text .author-info {
+        width: 175px;
+        margin-top: 43px;
+      }
+      .testimonial-text .author-info img {
+        max-width: 48px;
+      }
+      .testimonial-text .author-details {
+        top: 8px;
+      }
+      .testimonial-text .author-details h3 {
+        font-size: 14px;
+      }
+      .testimonial-text .author-details p {
+        font-size: 11px;
+      }
+      .form-control-lg {
+        min-height: inherit;
+        padding: 7px 10px;
+        font-size: 13px;
+        border-radius: .3rem;
+      }
+}
+@media (max-width:300px){
+    .header-menu ul li a {
+        font-size: 12px;
+      }
+      .navbar-nav .dropdown-menu {
+        left: 85px;
+      }
+      .about-text-left h2 {
+        font-size: 16px;
+      }
+      .about-text-left p {
+        font-size: 11px;
+      }
+      .pricing-item h2 {
+        font-size: 21px;
+        margin-bottom: 10px;
+      }
+      .pricing-item h3 {
+        font-size: 14px;
+        margin-bottom: 17px;
+      }
+      .pricing-item ul li {
+        font-size: 12px;
+      }
+      .pricing-item ul li span {
+        font-size: 16px;
+        width: 19px;
+      }
+      .pricing-item .pricing-btn a {
+        font-size: 13px;
+        padding: 7px 12px;
+      }
+}
